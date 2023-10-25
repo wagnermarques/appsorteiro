@@ -34,4 +34,4 @@ jobs:
           name: build_output
           path: ${{ outputs.build_output_path }}
       - name: Deploy GitHub Pages
-        run: gh-pages -d dist/
+        run: gh-pages -d dist/sorteioangularapp/
