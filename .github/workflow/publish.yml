@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build the project
-        run: ng build --prod --output-path dist
+        run: ng build --prod --output-path buildedforgitpages
 
     outputs:
       build_output_path: ${{ steps.build.outputs.build_output_path }}
@@ -32,6 +32,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build_output
-          path: ${{ outputs.build_output_path }}
+          path: buildedforgitpages
       - name: Deploy GitHub Pages
-        run: gh-pages -d dist/sorteioangularapp/
+        run: gh-pages -d buildedforgitpages
