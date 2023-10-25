@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "buildforgitpages":"ng build --prod --base-href 'https://wagnermarques.github.io/appsorteios/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
